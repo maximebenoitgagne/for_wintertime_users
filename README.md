@@ -15,8 +15,17 @@ https://github.com/maximebenoitgagne/wintertime/tree/v1.5.
 These installation steps were tested for MacOS X 10.13 (High Sierra).
 
 * Install Panoply (https://www.giss.nasa.gov/tools/panoply/download/).
-* Install Anaconda for Python 3
-(see https://datacarpentry.org/python-ecology-lesson/setup.html).
+
+- Install Anaconda for Python 3 as described on 
+  https://datacarpentry.org/python-ecology-lesson/setup.html:
+  - Go to https://www.anaconda.com/products/distribution.
+  - Click Download.
+  - Double-click the graphical installer `.pkg` file.
+  - Follow the instructions. Select the default settings.
+  - Verify the installation by entering the following command in the Terminal
+    (Launchpad icon in the Dock, type Terminal, click Terminal):
+    - `conda --help`
+ 
 * Enter the following commands in the Terminal.
 The creation of the conda environment can take approximately 15 minutes.
 ```

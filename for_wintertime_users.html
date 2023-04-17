@@ -14766,29 +14766,36 @@ The dimensions of the data are the depth steps and the time steps.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
 <li>Install Panoply (<a href="https://www.giss.nasa.gov/tools/panoply/download/">https://www.giss.nasa.gov/tools/panoply/download/</a>).</li>
-<li>Install Anaconda for Python 3</li>
 </ul>
-<p>(see <a href="https://datacarpentry.org/python-ecology-lesson/setup.html">https://datacarpentry.org/python-ecology-lesson/setup.html</a>).</p>
+<ul>
+<li>Install Anaconda for Python 3 as described on 
+<a href="https://datacarpentry.org/python-ecology-lesson/setup.html">https://datacarpentry.org/python-ecology-lesson/setup.html</a>:<ul>
+<li>Go to <a href="https://www.anaconda.com/products/distribution">https://www.anaconda.com/products/distribution</a>.</li>
+<li>Click Download.</li>
+<li>Double-click the graphical installer <code>.pkg</code> file.</li>
+<li>Follow the instructions. Select the default settings.</li>
+<li>Verify the installation by entering the following command in the Terminal
+(Launchpad icon in the Dock, type Terminal, click Terminal):<ul>
+<li><code>conda --help</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <ul>
 <li>Enter the following commands in the Terminal.</li>
 </ul>
 <p>The creation of the conda environment can take approximately 15 minutes.</p>
-<pre><code>git clone --depth 1 --branch v1.0 git@github.com:maximebenoitgagne/for_wintertime_users.git
-</code></pre>
-<pre><code>cd for_wintertime_users/
-</code></pre>
-<pre><code>conda env create -f for_wintertime_users.yml
-</code></pre>
-<pre><code>conda activate for_wintertime_users
-</code></pre>
-<pre><code>jupyter notebook
+<pre><code>git clone git@github.com:maximebenoitgagne/for_wintertime_users.git
+cd for_wintertime_users/
+conda env create -f for_wintertime_users.yml
+conda activate for_wintertime_users
+jupyter notebook
 </code></pre>
 <p>Once the environment for_wintertime_users is created, the Jupyter notebook can be launched simply with:</p>
 <pre><code>cd for_wintertime_users/
-</code></pre>
-<pre><code>conda activate for_wintertime_users
-</code></pre>
-<pre><code>jupyter notebook
+conda activate for_wintertime_users
+jupyter notebook
 </code></pre>
 
 </div>

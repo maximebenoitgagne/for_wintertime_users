@@ -1,0 +1,11 @@
+name: for_wintertime_users
+channels:
+  - conda-forge
+dependencies:
+  - jupyter
+  - matplotlib
+  - netCDF4
+  - numpy
+  - pandas
+  - python=3.7
+  - scipy

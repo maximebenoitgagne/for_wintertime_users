@@ -1,0 +1,6 @@
+*~
+*.bak.*
+.DS_Store
+.ipynb_checkpoints
+.git
+__pycache__

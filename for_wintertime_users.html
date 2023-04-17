@@ -17523,323 +17523,325 @@ The 75 following rows are the depths.</p>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/IPython/core/formatters.py:707</span>, in <span class="ansi-cyan-fg">PlainTextFormatter.__call__</span><span class="ansi-blue-fg">(self, obj)</span>
-<span class="ansi-green-intense-fg ansi-bold">    700</span> stream <span style="color: rgb(98,98,98)">=</span> StringIO()
-<span class="ansi-green-intense-fg ansi-bold">    701</span> printer <span style="color: rgb(98,98,98)">=</span> pretty<span style="color: rgb(98,98,98)">.</span>RepresentationPrinter(stream, <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>verbose,
-<span class="ansi-green-intense-fg ansi-bold">    702</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>max_width, <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>newline,
-<span class="ansi-green-intense-fg ansi-bold">    703</span>     max_seq_length<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>max_seq_length,
-<span class="ansi-green-intense-fg ansi-bold">    704</span>     singleton_pprinters<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>singleton_printers,
-<span class="ansi-green-intense-fg ansi-bold">    705</span>     type_pprinters<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>type_printers,
-<span class="ansi-green-intense-fg ansi-bold">    706</span>     deferred_pprinters<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>deferred_printers)
-<span class="ansi-green-fg">--&gt; 707</span> <span class="ansi-yellow-bg">printer</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">pretty</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    708</span> printer<span style="color: rgb(98,98,98)">.</span>flush()
-<span class="ansi-green-intense-fg ansi-bold">    709</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> stream<span style="color: rgb(98,98,98)">.</span>getvalue()
 
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/IPython/lib/pretty.py:410</span>, in <span class="ansi-cyan-fg">RepresentationPrinter.pretty</span><span class="ansi-blue-fg">(self, obj)</span>
-<span class="ansi-green-intense-fg ansi-bold">    407</span>                         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> meth(obj, <span style="color: rgb(0,135,0)">self</span>, cycle)
-<span class="ansi-green-intense-fg ansi-bold">    408</span>                 <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">cls</span> <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">object</span> \
-<span class="ansi-green-intense-fg ansi-bold">    409</span>                         <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> callable(<span style="color: rgb(0,135,0)">cls</span><span style="color: rgb(98,98,98)">.</span><span style="color: rgb(0,0,135)">__dict__</span><span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">__repr__</span><span style="color: rgb(175,0,0)">&#39;</span>)):
-<span class="ansi-green-fg">--&gt; 410</span>                     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">_repr_pprint</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">cycle</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    412</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> _default_pprint(obj, <span style="color: rgb(0,135,0)">self</span>, cycle)
-<span class="ansi-green-intense-fg ansi-bold">    413</span> <span class="ansi-bold" style="color: rgb(0,135,0)">finally</span>:
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/IPython/lib/pretty.py:778</span>, in <span class="ansi-cyan-fg">_repr_pprint</span><span class="ansi-blue-fg">(obj, p, cycle)</span>
-<span class="ansi-green-intense-fg ansi-bold">    776</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;A pprint that just redirects to the normal repr function.&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    777</span> <span style="color: rgb(95,135,135)"># Find newlines and replace them with p.break_()</span>
-<span class="ansi-green-fg">--&gt; 778</span> output <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">repr</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    779</span> lines <span style="color: rgb(98,98,98)">=</span> output<span style="color: rgb(98,98,98)">.</span>splitlines()
-<span class="ansi-green-intense-fg ansi-bold">    780</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> p<span style="color: rgb(98,98,98)">.</span>group():
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/frame.py:1062</span>, in <span class="ansi-cyan-fg">DataFrame.__repr__</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1059</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> buf<span style="color: rgb(98,98,98)">.</span>getvalue()
-<span class="ansi-green-intense-fg ansi-bold">   1061</span> repr_params <span style="color: rgb(98,98,98)">=</span> fmt<span style="color: rgb(98,98,98)">.</span>get_dataframe_repr_params()
-<span class="ansi-green-fg">-&gt; 1062</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">to_string</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">repr_params</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/frame.py:1225</span>, in <span class="ansi-cyan-fg">DataFrame.to_string</span><span class="ansi-blue-fg">(self, buf, columns, col_space, header, index, na_rep, formatters, float_format, sparsify, index_names, justify, max_rows, max_cols, show_dimensions, decimal, line_width, min_rows, max_colwidth, encoding)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1222</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">pandas</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> option_context
-<span class="ansi-green-intense-fg ansi-bold">   1224</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> option_context(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">display.max_colwidth</span><span style="color: rgb(175,0,0)">&#34;</span>, max_colwidth):
-<span class="ansi-green-fg">-&gt; 1225</span>     formatter <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">fmt</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">DataFrameFormatter</span><span class="ansi-yellow-bg">(</span>
-<span class="ansi-green-intense-fg ansi-bold">   1226</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1227</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">columns</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">columns</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1228</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">col_space</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">col_space</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1229</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">na_rep</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">na_rep</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1230</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">formatters</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">formatters</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1231</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">float_format</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">float_format</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1232</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">sparsify</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">sparsify</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1233</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">justify</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">justify</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1234</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">index_names</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">index_names</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1235</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">header</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">header</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1236</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">index</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">index</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1237</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">min_rows</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">min_rows</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1238</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">max_rows</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">max_rows</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1239</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">max_cols</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">max_cols</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1240</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">show_dimensions</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">show_dimensions</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1241</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">decimal</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">decimal</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1242</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1243</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> fmt<span style="color: rgb(98,98,98)">.</span>DataFrameRenderer(formatter)<span style="color: rgb(98,98,98)">.</span>to_string(
-<span class="ansi-green-intense-fg ansi-bold">   1244</span>         buf<span style="color: rgb(98,98,98)">=</span>buf,
-<span class="ansi-green-intense-fg ansi-bold">   1245</span>         encoding<span style="color: rgb(98,98,98)">=</span>encoding,
-<span class="ansi-green-intense-fg ansi-bold">   1246</span>         line_width<span style="color: rgb(98,98,98)">=</span>line_width,
-<span class="ansi-green-intense-fg ansi-bold">   1247</span>     )
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/io/formats/format.py:610</span>, in <span class="ansi-cyan-fg">DataFrameFormatter.__init__</span><span class="ansi-blue-fg">(self, frame, columns, col_space, header, index, na_rep, formatters, justify, float_format, sparsify, index_names, max_rows, min_rows, max_cols, show_dimensions, decimal, bold_rows, escape)</span>
-<span class="ansi-green-intense-fg ansi-bold">    607</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>max_rows_fitted <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_calc_max_rows_fitted()
-<span class="ansi-green-intense-fg ansi-bold">    609</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>tr_frame <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>frame
-<span class="ansi-green-fg">--&gt; 610</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">truncate</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    611</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>adj <span style="color: rgb(98,98,98)">=</span> get_adjustment()
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/io/formats/format.py:798</span>, in <span class="ansi-cyan-fg">DataFrameFormatter.truncate</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    794</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    795</span> <span style="color: rgb(175,0,0)">Check whether the frame should be truncated. If so, slice the frame up.</span>
-<span class="ansi-green-intense-fg ansi-bold">    796</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    797</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>is_truncated_horizontally:
-<span class="ansi-green-fg">--&gt; 798</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_truncate_horizontally</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    800</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>is_truncated_vertically:
-<span class="ansi-green-intense-fg ansi-bold">    801</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_truncate_vertically()
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/io/formats/format.py:814</span>, in <span class="ansi-cyan-fg">DataFrameFormatter._truncate_horizontally</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    812</span> col_num <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>max_cols_fitted <span style="color: rgb(98,98,98)">/</span><span style="color: rgb(98,98,98)">/</span> <span style="color: rgb(98,98,98)">2</span>
-<span class="ansi-green-intense-fg ansi-bold">    813</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> col_num <span style="color: rgb(98,98,98)">&gt;</span><span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">1</span>:
-<span class="ansi-green-fg">--&gt; 814</span>     left <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">tr_frame</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">iloc</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">col_num</span><span class="ansi-yellow-bg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">    815</span>     right <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>tr_frame<span style="color: rgb(98,98,98)">.</span>iloc[:, <span style="color: rgb(98,98,98)">-</span>col_num:]
-<span class="ansi-green-intense-fg ansi-bold">    816</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>tr_frame <span style="color: rgb(98,98,98)">=</span> concat((left, right), axis<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">1</span>)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1067</span>, in <span class="ansi-cyan-fg">_LocationIndexer.__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1065</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_is_scalar_access(key):
-<span class="ansi-green-intense-fg ansi-bold">   1066</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>obj<span style="color: rgb(98,98,98)">.</span>_get_value(<span style="color: rgb(98,98,98)">*</span>key, takeable<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_takeable)
-<span class="ansi-green-fg">-&gt; 1067</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_tuple</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1068</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">   1069</span>     <span style="color: rgb(95,135,135)"># we by definition only have the 0th axis</span>
-<span class="ansi-green-intense-fg ansi-bold">   1070</span>     axis <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>axis <span class="ansi-bold" style="color: rgb(175,0,255)">or</span> <span style="color: rgb(98,98,98)">0</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1567</span>, in <span class="ansi-cyan-fg">_iLocIndexer._getitem_tuple</span><span class="ansi-blue-fg">(self, tup)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1564</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> suppress(IndexingError):
-<span class="ansi-green-intense-fg ansi-bold">   1565</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_getitem_lowerdim(tup)
-<span class="ansi-green-fg">-&gt; 1567</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_tuple_same_dim</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">tup</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:924</span>, in <span class="ansi-cyan-fg">_LocationIndexer._getitem_tuple_same_dim</span><span class="ansi-blue-fg">(self, tup)</span>
-<span class="ansi-green-intense-fg ansi-bold">    921</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> com<span style="color: rgb(98,98,98)">.</span>is_null_slice(key):
-<span class="ansi-green-intense-fg ansi-bold">    922</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">continue</span>
-<span class="ansi-green-fg">--&gt; 924</span> retval <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">getattr</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">retval</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">i</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    925</span> <span style="color: rgb(95,135,135)"># We should never have retval.ndim &lt; self.ndim, as that should</span>
-<span class="ansi-green-intense-fg ansi-bold">    926</span> <span style="color: rgb(95,135,135)">#  be handled by the _getitem_lowerdim call above.</span>
-<span class="ansi-green-intense-fg ansi-bold">    927</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> retval<span style="color: rgb(98,98,98)">.</span>ndim <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>ndim
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1602</span>, in <span class="ansi-cyan-fg">_iLocIndexer._getitem_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1596</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">IndexError</span>(
-<span class="ansi-green-intense-fg ansi-bold">   1597</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">DataFrame indexer is not allowed for .iloc</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   1598</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Consider using .loc for automatic alignment.</span><span style="color: rgb(175,0,0)">&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   1599</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1601</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(key, <span style="color: rgb(0,135,0)">slice</span>):
-<span class="ansi-green-fg">-&gt; 1602</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_get_slice_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1604</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> is_iterator(key):
-<span class="ansi-green-intense-fg ansi-bold">   1605</span>     key <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">list</span>(key)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1638</span>, in <span class="ansi-cyan-fg">_iLocIndexer._get_slice_axis</span><span class="ansi-blue-fg">(self, slice_obj, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1636</span> labels <span style="color: rgb(98,98,98)">=</span> obj<span style="color: rgb(98,98,98)">.</span>_get_axis(axis)
-<span class="ansi-green-intense-fg ansi-bold">   1637</span> labels<span style="color: rgb(98,98,98)">.</span>_validate_positional_slice(slice_obj)
-<span class="ansi-green-fg">-&gt; 1638</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_slice</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">slice_obj</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/generic.py:4105</span>, in <span class="ansi-cyan-fg">NDFrame._slice</span><span class="ansi-blue-fg">(self, slobj, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   4103</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> <span style="color: rgb(0,135,0)">isinstance</span>(slobj, <span style="color: rgb(0,135,0)">slice</span>), <span style="color: rgb(0,135,0)">type</span>(slobj)
-<span class="ansi-green-intense-fg ansi-bold">   4104</span> axis <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_get_block_manager_axis(axis)
-<span class="ansi-green-fg">-&gt; 4105</span> result <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_constructor(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_mgr</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">get_slice</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">slobj</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-intense-fg ansi-bold">   4106</span> result <span style="color: rgb(98,98,98)">=</span> result<span style="color: rgb(98,98,98)">.</span>__finalize__(<span style="color: rgb(0,135,0)">self</span>)
-<span class="ansi-green-intense-fg ansi-bold">   4108</span> <span style="color: rgb(95,135,135)"># this could be a view</span>
-<span class="ansi-green-intense-fg ansi-bold">   4109</span> <span style="color: rgb(95,135,135)"># but only in a single-dtyped view sliceable case</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/_libs/internals.pyx:821</span>, in <span class="ansi-cyan-fg">pandas._libs.internals.BlockManager.get_slice</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/internals/managers.py:902</span>, in <span class="ansi-cyan-fg">BaseBlockManager._slice_take_blocks_ax0</span><span class="ansi-blue-fg">(self, slice_or_indexer, fill_value, only_slice, use_na_proxy)</span>
-<span class="ansi-green-intense-fg ansi-bold">    900</span>         refs<span style="color: rgb(98,98,98)">.</span>append(weakref<span style="color: rgb(98,98,98)">.</span>ref(blk))
-<span class="ansi-green-intense-fg ansi-bold">    901</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">--&gt; 902</span>     nb <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">blk</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">take_nd</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">taker</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">0</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">new_mgr_locs</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">mgr_locs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    903</span>     blocks<span style="color: rgb(98,98,98)">.</span>append(nb)
-<span class="ansi-green-intense-fg ansi-bold">    904</span>     refs<span style="color: rgb(98,98,98)">.</span>append(<span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/internals/blocks.py:878</span>, in <span class="ansi-cyan-fg">Block.take_nd</span><span class="ansi-blue-fg">(self, indexer, axis, new_mgr_locs, fill_value)</span>
-<span class="ansi-green-intense-fg ansi-bold">    875</span>     allow_fill <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>
-<span class="ansi-green-intense-fg ansi-bold">    877</span> <span style="color: rgb(95,135,135)"># Note: algos.take_nd has upcast logic similar to coerce_to_target_dtype</span>
-<span class="ansi-green-fg">--&gt; 878</span> new_values <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">algos</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">take_nd</span><span class="ansi-yellow-bg">(</span>
-<span class="ansi-green-intense-fg ansi-bold">    879</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">values</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">allow_fill</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">allow_fill</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fill_value</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">fill_value</span>
-<span class="ansi-green-intense-fg ansi-bold">    880</span> <span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    882</span> <span style="color: rgb(95,135,135)"># Called from three places in managers, all of which satisfy</span>
-<span class="ansi-green-intense-fg ansi-bold">    883</span> <span style="color: rgb(95,135,135)">#  this assertion</span>
-<span class="ansi-green-intense-fg ansi-bold">    884</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> (axis <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(98,98,98)">0</span> <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> new_mgr_locs <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/array_algos/take.py:117</span>, in <span class="ansi-cyan-fg">take_nd</span><span class="ansi-blue-fg">(arr, indexer, axis, fill_value, allow_fill)</span>
-<span class="ansi-green-intense-fg ansi-bold">    114</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> arr<span style="color: rgb(98,98,98)">.</span>take(indexer, fill_value<span style="color: rgb(98,98,98)">=</span>fill_value, allow_fill<span style="color: rgb(98,98,98)">=</span>allow_fill)
-<span class="ansi-green-intense-fg ansi-bold">    116</span> arr <span style="color: rgb(98,98,98)">=</span> np<span style="color: rgb(98,98,98)">.</span>asarray(arr)
-<span class="ansi-green-fg">--&gt; 117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">_take_nd_ndarray</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">arr</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fill_value</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">allow_fill</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/array_algos/take.py:163</span>, in <span class="ansi-cyan-fg">_take_nd_ndarray</span><span class="ansi-blue-fg">(arr, indexer, axis, fill_value, allow_fill)</span>
-<span class="ansi-green-intense-fg ansi-bold">    158</span>     out <span style="color: rgb(98,98,98)">=</span> np<span style="color: rgb(98,98,98)">.</span>empty(out_shape, dtype<span style="color: rgb(98,98,98)">=</span>dtype)
-<span class="ansi-green-intense-fg ansi-bold">    160</span> func <span style="color: rgb(98,98,98)">=</span> _get_take_nd_function(
-<span class="ansi-green-intense-fg ansi-bold">    161</span>     arr<span style="color: rgb(98,98,98)">.</span>ndim, arr<span style="color: rgb(98,98,98)">.</span>dtype, out<span style="color: rgb(98,98,98)">.</span>dtype, axis<span style="color: rgb(98,98,98)">=</span>axis, mask_info<span style="color: rgb(98,98,98)">=</span>mask_info
-<span class="ansi-green-intense-fg ansi-bold">    162</span> )
-<span class="ansi-green-fg">--&gt; 163</span> <span class="ansi-yellow-bg">func</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">arr</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">out</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fill_value</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    165</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> flip_order:
-<span class="ansi-green-intense-fg ansi-bold">    166</span>     out <span style="color: rgb(98,98,98)">=</span> out<span style="color: rgb(98,98,98)">.</span>T
-
-File <span class="ansi-green-fg">pandas/_libs/algos_take_helper.pxi:1960</span>, in <span class="ansi-cyan-fg">pandas._libs.algos.take_2d_axis0_float64_float64</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-red-fg">ValueError</span>: Big-endian buffer not supported on little-endian compiler</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>depth_m</th>
+      <th>doy_001</th>
+      <th>doy_002</th>
+      <th>doy_003</th>
+      <th>doy_004</th>
+      <th>doy_005</th>
+      <th>doy_006</th>
+      <th>doy_007</th>
+      <th>doy_008</th>
+      <th>doy_009</th>
+      <th>...</th>
+      <th>doy_356</th>
+      <th>doy_357</th>
+      <th>doy_358</th>
+      <th>doy_359</th>
+      <th>doy_360</th>
+      <th>doy_361</th>
+      <th>doy_362</th>
+      <th>doy_363</th>
+      <th>doy_364</th>
+      <th>doy_365</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.506162</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.003517e-12</td>
+      <td>9.562626e-12</td>
+      <td>3.982557e-11</td>
+      <td>6.567130e-11</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.533345</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.746950e-12</td>
+      <td>9.208227e-12</td>
+      <td>3.840060e-11</td>
+      <td>6.336488e-11</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2.594872</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.635478e-12</td>
+      <td>8.835832e-12</td>
+      <td>3.689539e-11</td>
+      <td>6.092277e-11</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3.701326</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.376848e-12</td>
+      <td>8.455584e-12</td>
+      <td>3.535327e-11</td>
+      <td>5.841642e-11</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4.866235</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.267716e-12</td>
+      <td>8.068476e-12</td>
+      <td>3.377870e-11</td>
+      <td>5.585338e-11</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>339.634738</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>345.453388</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>351.272037</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>357.090687</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>362.909321</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>0.000000e+00</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>75 rows × 366 columns</p>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/IPython/core/formatters.py:343</span>, in <span class="ansi-cyan-fg">BaseFormatter.__call__</span><span class="ansi-blue-fg">(self, obj)</span>
-<span class="ansi-green-intense-fg ansi-bold">    341</span>     method <span style="color: rgb(98,98,98)">=</span> get_real_method(obj, <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>print_method)
-<span class="ansi-green-intense-fg ansi-bold">    342</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> method <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-fg">--&gt; 343</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">method</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    344</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-intense-fg ansi-bold">    345</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/frame.py:1084</span>, in <span class="ansi-cyan-fg">DataFrame._repr_html_</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1081</span>     max_cols <span style="color: rgb(98,98,98)">=</span> get_option(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">display.max_columns</span><span style="color: rgb(175,0,0)">&#34;</span>)
-<span class="ansi-green-intense-fg ansi-bold">   1082</span>     show_dimensions <span style="color: rgb(98,98,98)">=</span> get_option(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">display.show_dimensions</span><span style="color: rgb(175,0,0)">&#34;</span>)
-<span class="ansi-green-fg">-&gt; 1084</span>     formatter <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">fmt</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">DataFrameFormatter</span><span class="ansi-yellow-bg">(</span>
-<span class="ansi-green-intense-fg ansi-bold">   1085</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1086</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">columns</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">None</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1087</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">col_space</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">None</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1088</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">na_rep</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">NaN</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1089</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">formatters</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">None</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1090</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">float_format</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">None</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1091</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">sparsify</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">None</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1092</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">justify</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">None</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1093</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">index_names</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1094</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">header</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1095</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">index</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1096</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">bold_rows</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1097</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">escape</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">True</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1098</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">max_rows</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">max_rows</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1099</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">min_rows</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">min_rows</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1100</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">max_cols</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">max_cols</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1101</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">show_dimensions</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">show_dimensions</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1102</span> <span class="ansi-yellow-bg">        </span><span class="ansi-yellow-bg">decimal</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">.</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1103</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1104</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> fmt<span style="color: rgb(98,98,98)">.</span>DataFrameRenderer(formatter)<span style="color: rgb(98,98,98)">.</span>to_html(notebook<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">True</span>)
-<span class="ansi-green-intense-fg ansi-bold">   1105</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/io/formats/format.py:610</span>, in <span class="ansi-cyan-fg">DataFrameFormatter.__init__</span><span class="ansi-blue-fg">(self, frame, columns, col_space, header, index, na_rep, formatters, justify, float_format, sparsify, index_names, max_rows, min_rows, max_cols, show_dimensions, decimal, bold_rows, escape)</span>
-<span class="ansi-green-intense-fg ansi-bold">    607</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>max_rows_fitted <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_calc_max_rows_fitted()
-<span class="ansi-green-intense-fg ansi-bold">    609</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>tr_frame <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>frame
-<span class="ansi-green-fg">--&gt; 610</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">truncate</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    611</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>adj <span style="color: rgb(98,98,98)">=</span> get_adjustment()
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/io/formats/format.py:798</span>, in <span class="ansi-cyan-fg">DataFrameFormatter.truncate</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    794</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    795</span> <span style="color: rgb(175,0,0)">Check whether the frame should be truncated. If so, slice the frame up.</span>
-<span class="ansi-green-intense-fg ansi-bold">    796</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">    797</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>is_truncated_horizontally:
-<span class="ansi-green-fg">--&gt; 798</span>     <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_truncate_horizontally</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    800</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>is_truncated_vertically:
-<span class="ansi-green-intense-fg ansi-bold">    801</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_truncate_vertically()
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/io/formats/format.py:814</span>, in <span class="ansi-cyan-fg">DataFrameFormatter._truncate_horizontally</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    812</span> col_num <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>max_cols_fitted <span style="color: rgb(98,98,98)">/</span><span style="color: rgb(98,98,98)">/</span> <span style="color: rgb(98,98,98)">2</span>
-<span class="ansi-green-intense-fg ansi-bold">    813</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> col_num <span style="color: rgb(98,98,98)">&gt;</span><span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">1</span>:
-<span class="ansi-green-fg">--&gt; 814</span>     left <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">tr_frame</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">iloc</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">:</span><span class="ansi-yellow-bg">col_num</span><span class="ansi-yellow-bg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">    815</span>     right <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>tr_frame<span style="color: rgb(98,98,98)">.</span>iloc[:, <span style="color: rgb(98,98,98)">-</span>col_num:]
-<span class="ansi-green-intense-fg ansi-bold">    816</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>tr_frame <span style="color: rgb(98,98,98)">=</span> concat((left, right), axis<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">1</span>)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1067</span>, in <span class="ansi-cyan-fg">_LocationIndexer.__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1065</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_is_scalar_access(key):
-<span class="ansi-green-intense-fg ansi-bold">   1066</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>obj<span style="color: rgb(98,98,98)">.</span>_get_value(<span style="color: rgb(98,98,98)">*</span>key, takeable<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_takeable)
-<span class="ansi-green-fg">-&gt; 1067</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_tuple</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1068</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">   1069</span>     <span style="color: rgb(95,135,135)"># we by definition only have the 0th axis</span>
-<span class="ansi-green-intense-fg ansi-bold">   1070</span>     axis <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>axis <span class="ansi-bold" style="color: rgb(175,0,255)">or</span> <span style="color: rgb(98,98,98)">0</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1567</span>, in <span class="ansi-cyan-fg">_iLocIndexer._getitem_tuple</span><span class="ansi-blue-fg">(self, tup)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1564</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> suppress(IndexingError):
-<span class="ansi-green-intense-fg ansi-bold">   1565</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_getitem_lowerdim(tup)
-<span class="ansi-green-fg">-&gt; 1567</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_tuple_same_dim</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">tup</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:924</span>, in <span class="ansi-cyan-fg">_LocationIndexer._getitem_tuple_same_dim</span><span class="ansi-blue-fg">(self, tup)</span>
-<span class="ansi-green-intense-fg ansi-bold">    921</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> com<span style="color: rgb(98,98,98)">.</span>is_null_slice(key):
-<span class="ansi-green-intense-fg ansi-bold">    922</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">continue</span>
-<span class="ansi-green-fg">--&gt; 924</span> retval <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">getattr</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">retval</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_getitem_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">i</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    925</span> <span style="color: rgb(95,135,135)"># We should never have retval.ndim &lt; self.ndim, as that should</span>
-<span class="ansi-green-intense-fg ansi-bold">    926</span> <span style="color: rgb(95,135,135)">#  be handled by the _getitem_lowerdim call above.</span>
-<span class="ansi-green-intense-fg ansi-bold">    927</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> retval<span style="color: rgb(98,98,98)">.</span>ndim <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>ndim
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1602</span>, in <span class="ansi-cyan-fg">_iLocIndexer._getitem_axis</span><span class="ansi-blue-fg">(self, key, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1596</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">IndexError</span>(
-<span class="ansi-green-intense-fg ansi-bold">   1597</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">DataFrame indexer is not allowed for .iloc</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   1598</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Consider using .loc for automatic alignment.</span><span style="color: rgb(175,0,0)">&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">   1599</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1601</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(key, <span style="color: rgb(0,135,0)">slice</span>):
-<span class="ansi-green-fg">-&gt; 1602</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_get_slice_axis</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1604</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> is_iterator(key):
-<span class="ansi-green-intense-fg ansi-bold">   1605</span>     key <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">list</span>(key)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/indexing.py:1638</span>, in <span class="ansi-cyan-fg">_iLocIndexer._get_slice_axis</span><span class="ansi-blue-fg">(self, slice_obj, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1636</span> labels <span style="color: rgb(98,98,98)">=</span> obj<span style="color: rgb(98,98,98)">.</span>_get_axis(axis)
-<span class="ansi-green-intense-fg ansi-bold">   1637</span> labels<span style="color: rgb(98,98,98)">.</span>_validate_positional_slice(slice_obj)
-<span class="ansi-green-fg">-&gt; 1638</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">obj</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_slice</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">slice_obj</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/generic.py:4105</span>, in <span class="ansi-cyan-fg">NDFrame._slice</span><span class="ansi-blue-fg">(self, slobj, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">   4103</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> <span style="color: rgb(0,135,0)">isinstance</span>(slobj, <span style="color: rgb(0,135,0)">slice</span>), <span style="color: rgb(0,135,0)">type</span>(slobj)
-<span class="ansi-green-intense-fg ansi-bold">   4104</span> axis <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_get_block_manager_axis(axis)
-<span class="ansi-green-fg">-&gt; 4105</span> result <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_constructor(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_mgr</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">get_slice</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">slobj</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">)</span>)
-<span class="ansi-green-intense-fg ansi-bold">   4106</span> result <span style="color: rgb(98,98,98)">=</span> result<span style="color: rgb(98,98,98)">.</span>__finalize__(<span style="color: rgb(0,135,0)">self</span>)
-<span class="ansi-green-intense-fg ansi-bold">   4108</span> <span style="color: rgb(95,135,135)"># this could be a view</span>
-<span class="ansi-green-intense-fg ansi-bold">   4109</span> <span style="color: rgb(95,135,135)"># but only in a single-dtyped view sliceable case</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/_libs/internals.pyx:821</span>, in <span class="ansi-cyan-fg">pandas._libs.internals.BlockManager.get_slice</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/internals/managers.py:902</span>, in <span class="ansi-cyan-fg">BaseBlockManager._slice_take_blocks_ax0</span><span class="ansi-blue-fg">(self, slice_or_indexer, fill_value, only_slice, use_na_proxy)</span>
-<span class="ansi-green-intense-fg ansi-bold">    900</span>         refs<span style="color: rgb(98,98,98)">.</span>append(weakref<span style="color: rgb(98,98,98)">.</span>ref(blk))
-<span class="ansi-green-intense-fg ansi-bold">    901</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">--&gt; 902</span>     nb <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">blk</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">take_nd</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">taker</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">0</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">new_mgr_locs</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">mgr_locs</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    903</span>     blocks<span style="color: rgb(98,98,98)">.</span>append(nb)
-<span class="ansi-green-intense-fg ansi-bold">    904</span>     refs<span style="color: rgb(98,98,98)">.</span>append(<span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/internals/blocks.py:878</span>, in <span class="ansi-cyan-fg">Block.take_nd</span><span class="ansi-blue-fg">(self, indexer, axis, new_mgr_locs, fill_value)</span>
-<span class="ansi-green-intense-fg ansi-bold">    875</span>     allow_fill <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>
-<span class="ansi-green-intense-fg ansi-bold">    877</span> <span style="color: rgb(95,135,135)"># Note: algos.take_nd has upcast logic similar to coerce_to_target_dtype</span>
-<span class="ansi-green-fg">--&gt; 878</span> new_values <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">algos</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">take_nd</span><span class="ansi-yellow-bg">(</span>
-<span class="ansi-green-intense-fg ansi-bold">    879</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">values</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">allow_fill</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">allow_fill</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fill_value</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">fill_value</span>
-<span class="ansi-green-intense-fg ansi-bold">    880</span> <span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    882</span> <span style="color: rgb(95,135,135)"># Called from three places in managers, all of which satisfy</span>
-<span class="ansi-green-intense-fg ansi-bold">    883</span> <span style="color: rgb(95,135,135)">#  this assertion</span>
-<span class="ansi-green-intense-fg ansi-bold">    884</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> (axis <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(98,98,98)">0</span> <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> new_mgr_locs <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/array_algos/take.py:117</span>, in <span class="ansi-cyan-fg">take_nd</span><span class="ansi-blue-fg">(arr, indexer, axis, fill_value, allow_fill)</span>
-<span class="ansi-green-intense-fg ansi-bold">    114</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> arr<span style="color: rgb(98,98,98)">.</span>take(indexer, fill_value<span style="color: rgb(98,98,98)">=</span>fill_value, allow_fill<span style="color: rgb(98,98,98)">=</span>allow_fill)
-<span class="ansi-green-intense-fg ansi-bold">    116</span> arr <span style="color: rgb(98,98,98)">=</span> np<span style="color: rgb(98,98,98)">.</span>asarray(arr)
-<span class="ansi-green-fg">--&gt; 117</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">_take_nd_ndarray</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">arr</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fill_value</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">allow_fill</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/anaconda/envs/for_wintertime_users/lib/python3.9/site-packages/pandas/core/array_algos/take.py:163</span>, in <span class="ansi-cyan-fg">_take_nd_ndarray</span><span class="ansi-blue-fg">(arr, indexer, axis, fill_value, allow_fill)</span>
-<span class="ansi-green-intense-fg ansi-bold">    158</span>     out <span style="color: rgb(98,98,98)">=</span> np<span style="color: rgb(98,98,98)">.</span>empty(out_shape, dtype<span style="color: rgb(98,98,98)">=</span>dtype)
-<span class="ansi-green-intense-fg ansi-bold">    160</span> func <span style="color: rgb(98,98,98)">=</span> _get_take_nd_function(
-<span class="ansi-green-intense-fg ansi-bold">    161</span>     arr<span style="color: rgb(98,98,98)">.</span>ndim, arr<span style="color: rgb(98,98,98)">.</span>dtype, out<span style="color: rgb(98,98,98)">.</span>dtype, axis<span style="color: rgb(98,98,98)">=</span>axis, mask_info<span style="color: rgb(98,98,98)">=</span>mask_info
-<span class="ansi-green-intense-fg ansi-bold">    162</span> )
-<span class="ansi-green-fg">--&gt; 163</span> <span class="ansi-yellow-bg">func</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">arr</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">out</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fill_value</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    165</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> flip_order:
-<span class="ansi-green-intense-fg ansi-bold">    166</span>     out <span style="color: rgb(98,98,98)">=</span> out<span style="color: rgb(98,98,98)">.</span>T
-
-File <span class="ansi-green-fg">pandas/_libs/algos_take_helper.pxi:1960</span>, in <span class="ansi-cyan-fg">pandas._libs.algos.take_2d_axis0_float64_float64</span><span class="ansi-blue-fg">()</span>
-
-<span class="ansi-red-fg">ValueError</span>: Big-endian buffer not supported on little-endian compiler</pre>
-</div>
 </div>
 
 </div>

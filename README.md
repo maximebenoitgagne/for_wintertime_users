@@ -21,17 +21,9 @@ These installation steps were tested for MacOS X 10.13 (High Sierra).
 The creation of the conda environment can take approximately 15 minutes.
 ```
 git clone git@github.com:maximebenoitgagne/for_wintertime_users.git
-```
-```
 cd for_wintertime_users/
-```
-```
 conda env create -f for_wintertime_users.yml
-```
-```
 conda activate for_wintertime_users
-```
-```
 jupyter notebook
 ```
 
@@ -39,10 +31,6 @@ Once the environment for_wintertime_users is created, the Jupyter notebook can b
 
 ```
 cd for_wintertime_users/
-```
-```
 conda activate for_wintertime_users
-```
-```
 jupyter notebook
 ```

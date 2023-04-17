@@ -20,7 +20,7 @@ These installation steps were tested for MacOS X 10.13 (High Sierra).
 * Enter the following commands in the Terminal.
 The creation of the conda environment can take approximately 15 minutes.
 ```
-git clone --depth 1 --branch v1.0 git@github.com:maximebenoitgagne/for_wintertime_users.git
+git clone git@github.com:maximebenoitgagne/for_wintertime_users.git
 ```
 ```
 cd for_wintertime_users/

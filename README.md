@@ -24,12 +24,17 @@ These installation steps were tested for MacOS X 10.13 (High Sierra).
   - Follow the instructions. Select the default settings.
   - Verify the installation by entering the following command in the Terminal
     (Launchpad icon in the Dock, type Terminal, click Terminal):
-    - `conda --help`
- 
-* Enter the following commands in the Terminal.
-The creation of the conda environment can take approximately 15 minutes.
 ```
-git clone git@github.com:maximebenoitgagne/for_wintertime_users.git
+conda --version
+```
+If your version of conda is < 4.4:
+```
+conda update conda
+```
+ 
+* Enter the following commands in the Terminal. The creation of the conda environment can take approximately 15 minutes.
+```
+git clone https://github.com/maximebenoitgagne/for_wintertime_users.git
 cd for_wintertime_users/
 conda env create -f for_wintertime_users.yml
 conda activate for_wintertime_users

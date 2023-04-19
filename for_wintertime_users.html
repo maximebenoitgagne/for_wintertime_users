@@ -14779,12 +14779,15 @@ The dimensions of the data are the depth steps and the time steps.</p>
 </ul>
 </li>
 </ul>
-<pre><code>conda --help
+<pre><code>conda --version
+</code></pre>
+<p>If your version of conda is &lt; 4.4:</p>
+<pre><code>conda update conda
 </code></pre>
 <ul>
 <li>Enter the following commands in the Terminal. The creation of the conda environment can take approximately 15 minutes.</li>
 </ul>
-<pre><code>git clone git@github.com:maximebenoitgagne/for_wintertime_users.git
+<pre><code>git clone https://github.com/maximebenoitgagne/for_wintertime_users.git
 cd for_wintertime_users/
 conda env create -f for_wintertime_users.yml
 conda activate for_wintertime_users

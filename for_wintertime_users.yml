@@ -5,6 +5,7 @@ dependencies:
   - jupyter
   - matplotlib
   - netCDF4
+  - notebook=7.0
   - numpy
   - pandas
   - python=3.8

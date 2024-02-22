@@ -12,7 +12,7 @@ https://github.com/maximebenoitgagne/wintertime/tree/v1.5.
 
 # Installation steps
 
-These installation steps were tested for MacOS X 10.13 (High Sierra).
+These installation steps were tested for MacOS X 11 (Big Sur).
 
 * Install Panoply (https://www.giss.nasa.gov/tools/panoply/download/).
 
@@ -32,7 +32,7 @@ If your version of conda is < 4.4:
 conda update conda
 ```
  
-* Enter the following commands in the Terminal. The creation of the conda environment can take approximately 15 minutes.
+* Enter the following commands in the Terminal. The creation of the conda environment can take approximately 5 minutes.
 ```
 git clone https://github.com/maximebenoitgagne/for_wintertime_users.git
 cd for_wintertime_users/

@@ -7,5 +7,5 @@ dependencies:
   - netCDF4
   - numpy
   - pandas
-  - python=3.7
+  - python=3.8
   - scipy

@@ -12,7 +12,7 @@ https://github.com/maximebenoitgagne/wintertime/tree/v1.5.
 
 # Installation steps
 
-These installation steps were tested for MacOS X 11 (Big Sur).
+These installation steps were tested for MacOS 11 (Big Sur).
 
 * Install Panoply (https://www.giss.nasa.gov/tools/panoply/download/).
 
